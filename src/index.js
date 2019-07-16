@@ -458,7 +458,11 @@ export function useDropzone({
     event => {
       // Prevent click events from propagating to the <input> when the click event
       // originated from a <label> that wraps the dropzone
-      event.preventDefault()
+
+      //-----------------------
+      // commented so it can be used with react-material-ui-form-validator
+      // event.preventDefault()
+      //-----------------------
 
       if (noClick) {
         return
